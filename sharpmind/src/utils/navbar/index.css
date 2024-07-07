@@ -1,0 +1,119 @@
+/* Navbar.css
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'); */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* .above-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cdeafa;
+    color: rgb(29, 27, 27);
+    padding: 10px;
+  } */
+  
+
+  .above-navbar-heading {
+    margin: 0;
+  }
+  
+  .above-navbar-logo {
+    height: 40px;
+  }
+.navbar {
+  background-color: #858a8a;
+  /* overflow: hidden; */
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu > li {
+  position: relative;
+  list-style: none;
+}
+
+.navbar-menu > li a, .navbar-menu > li button, .navbar-menu > li input, .navbar-menu > li .login-button {
+  list-style: none;
+  display: block;
+  color: rgb(33, 36, 36);
+  background-color: #45a049;
+  text-align: center;
+  padding: 4px 4px;
+  margin: 5px;
+  border-radius: 20%;
+  list-style: none;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+}
+
+.navbar-menu > li input {
+  color: black;
+  border-radius: 4px;
+  border: 2px solid black;
+  padding: 5px;
+  margin-top: 7px;
+}
+
+.navbar-menu > li a:hover, .navbar-menu > li button:hover, .navbar-menu > li input:focus, .navbar-menu > li .login-button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 4747;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #b3eee6;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+}
+
+.navbar-search {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.login-button {
+  background-color: #4ee953;
+  color: rgb(233, 14, 116);
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  size: 10px;
+  cursor: pointer;
+  /* position: right; */
+}
+
+.login-button:hover {
+  background-color: #45a049;
+} 
