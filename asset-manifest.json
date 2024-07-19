@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/SharpCareer/static/css/main.8d01f567.css",
-    "main.js": "/SharpCareer/static/js/main.cc2cc59c.js",
+    "main.js": "/SharpCareer/static/js/main.06284aba.js",
     "static/js/453.fafa627e.chunk.js": "/SharpCareer/static/js/453.fafa627e.chunk.js",
     "index.html": "/SharpCareer/index.html",
     "main.8d01f567.css.map": "/SharpCareer/static/css/main.8d01f567.css.map",
-    "main.cc2cc59c.js.map": "/SharpCareer/static/js/main.cc2cc59c.js.map",
+    "main.06284aba.js.map": "/SharpCareer/static/js/main.06284aba.js.map",
     "453.fafa627e.chunk.js.map": "/SharpCareer/static/js/453.fafa627e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8d01f567.css",
-    "static/js/main.cc2cc59c.js"
+    "static/js/main.06284aba.js"
   ]
 }
