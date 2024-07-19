@@ -1,0 +1,156 @@
+/* Main CSS */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  background-color: #858a8a;
+  padding: 5px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Ensure the menu is responsive */
+}
+
+.navbar-menu > li {
+  position: relative;
+  margin-right: 15px;
+}
+
+.navbar-menu > li a,
+.navbar-menu > li button,
+.navbar-menu > li input {
+  color: #333;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+}
+
+.navbar-menu > li input {
+  border: 2px solid #333;
+  border-radius: 4px;
+}
+
+.navbar-menu > li a:hover,
+.navbar-menu > li button:hover,
+.navbar-menu > li input:focus {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #b3eee6;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+}
+
+.navbar-search {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  background-color: white; /* Set background color to white */
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.btn-success {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: rgb(185, 137, 137);
+  border: none;
+}
+
+/* Remove hover effect from buttons and set initial background color */
+.btn-success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #ff0000; /* Red background */
+  color: rgb(185, 137, 137);
+}
+
+/* Adjust button hover effects */
+.btn-success:hover,
+.btn-primary:hover {
+  background-color: initial;
+  color: initial;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+  }
+
+  .navbar-menu > li {
+    margin-right: 0;
+    margin-bottom: 10px; /* Add spacing between menu items */
+    width: 100%; /* Ensure full width for menu items */
+  }
+
+  .navbar-menu > li.dropdown {
+    position: relative; /* Ensure dropdowns appear correctly */
+  }
+
+  .navbar-menu > li .dropdown-menu {
+    position: static; /* Ensure dropdowns are static for small screens */
+    display: none; /* Hide dropdowns by default */
+    width: auto;
+    margin-top: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-menu > li .dropdown:hover .dropdown-menu {
+    display: block; /* Display dropdown on hover */
+  }
+
+  .navbar-search {
+    margin-top: 10px; /* Add spacing above search bar */
+    margin-bottom: 10px; /* Add spacing below search bar */
+  }
+}

@@ -1,0 +1,49 @@
+.departments-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .departments-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .department-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .department {
+    flex: 1 1 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .department h2 {
+    margin-top: 0;
+  }
+  
+  .department p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .department-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .department {
+      width: 100%;
+    }
+  }
+  

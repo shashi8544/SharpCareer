@@ -1,0 +1,70 @@
+/* FacilitiesContainer Component Styles */
+.facilities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.facilities-box {
+    position: relative;
+    width: 30%;
+    min-width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.facilities-box:hover {
+    transform: scale(1.05);
+}
+
+.facilities-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.facilities-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.facilities-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .facilities-box {
+        width: 45%;
+    }
+
+    .facilities-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .facilities-box {
+        width: 100%;
+    }
+
+    .facilities-text {
+        font-size: 16px;
+    }
+}

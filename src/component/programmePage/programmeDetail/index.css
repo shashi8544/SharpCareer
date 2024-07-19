@@ -1,0 +1,106 @@
+.program-details-container {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .program-details-container:before {
+    content: "";
+    background: url('https://www.transparenttextures.com/patterns/batthern.png') no-repeat center center / cover;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .program-details-container h2,
+  .program-details-container h3 {
+    font-weight: bold;
+  }
+  
+  .program-details-container p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .faculty-list,
+  .alumni-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .faculty-item,
+  .alumni-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .faculty-image,
+  .alumni-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .program-details-container {
+      padding: 15px;
+    }
+  
+    .faculty-item,
+    .alumni-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .faculty-image,
+    .alumni-image {
+      width: 50px;
+      height: 50px;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .program-details-container h2 {
+      font-size: 20px;
+    }
+  
+    .program-details-container h3 {
+      font-size: 18px;
+    }
+  
+    .program-details-container p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .program-details-container {
+      padding: 10px;
+    }
+  
+    .program-details-container h2 {
+      font-size: 18px;
+    }
+  
+    .program-details-container h3 {
+      font-size: 16px;
+    }
+  
+    .program-details-container p {
+      font-size: 12px;
+    }
+  }
+  
