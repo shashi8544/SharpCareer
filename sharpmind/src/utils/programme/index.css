@@ -1,0 +1,70 @@
+/* ProgrammeContainer Component Styles */
+.programme-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.programme-box {
+    position: relative;
+    width: 30%;
+    min-width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.programme-box:hover {
+    transform: scale(1.05);
+}
+
+.programme-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.programme-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.programme-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .programme-box {
+        width: 45%;
+    }
+
+    .programme-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .programme-box {
+        width: 100%;
+    }
+
+    .programme-text {
+        font-size: 16px;
+    }
+}

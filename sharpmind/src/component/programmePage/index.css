@@ -1,0 +1,58 @@
+/* MainPage.css */
+.main-page {
+  display: flex;
+}
+
+.program-sidebar {
+  width: 250px;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.program-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.program-sidebar-box h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.program-sidebar-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.program-sidebar-box ul li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.program-sidebar-box ul li:hover,
+.program-sidebar-box ul li.selected {
+  background: #2980b9;
+  color: #fff;
+}
+
+.sub-program-sidebar h3 {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.sub-program-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sub-program-sidebar ul li {
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sub-program-sidebar ul li:hover {
+  background: #3498db;
+  color: #fff;
+}
